@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Fraunces:wght@600;900&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="menu-desktop">
+        <img class="logo" src="/images/logo.svg" alt="" />
+
+        <div class="menu-links">
+          <ul class="menu-links-desktop">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a class="contact" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="menu-button">
+        <img src="/images/icon-hamburger.svg" alt="" />
+      </div>
+      <div class="menu-mobile">
+        <ul class="menu-mobile-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a class="contact contact-mobile" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <section class="hero-text">
+        <h1>We are creatives</h1>
+        <img
+          class="arrow-down"
+          src="/images/icon-arrow-down.svg"
+          alt="arrow down"
+        />
+      </section>
+    </header>
+    <main>
+      <section class="card-group-info">
+        <div class="card-info card-top">
+          <h2>Transform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <div class="learn-more"><a href="#">Learn more</a></div>
+        </div>
+        <div class="card-info">
+          <picture>
+            <source
+              media="(min-width:750px)"
+              srcset="/images/desktop/image-transform.jpg"
+            />
+            <img src="/images/mobile/image-transform.jpg" alt="egg" />
+          </picture>
+        </div>
+
+        <div class="card-info">
+          <picture>
+            <source
+              media="(min-width:750px)"
+              srcset="/images/desktop/image-stand-out.jpg"
+            />
+            <img src="/images/mobile/image-stand-out.jpg" alt="cup" />
+          </picture>
+        </div>
+
+        <div class="card-info card-top">
+          <h2>Stand out to the right audience</h2>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <div class="learn-more"><a href="#">Learn more</a></div>
+        </div>
+        <div class="card-info card-bot">
+          <h3>Graphic design</h3>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+        <div class="card-info card-bot">
+          <h3>Photography</h3>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </section>
+      <section class="testimonial">
+        <h4>Client testimonials</h4>
+        <div class="card-group-testi">
+          <div class="card-testi">
+            <img src="/images/image-emily.jpg" alt="testimonial image" />
+            <p>
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <p>Emily R.</p>
+            <p>Marketing Director</p>
+          </div>
+          <div class="card-testi">
+            <img src="/images/image-thomas.jpg" alt="testimonial image" />
+            <p>
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <p>Thomas S.</p>
+            <p>Chief Operating Officer</p>
+          </div>
+          <div class="card-testi">
+            <img src="/images/image-jennie.jpg" alt="testimonial image" />
+            <p>
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <p>Jennie F.</p>
+            <p>Business Owner</p>
+          </div>
+        </div>
+      </section>
+      <section class="card-group-images">
+        <picture>
+          <source
+            media="(min-width:750px)"
+            srcset="/images/desktop/image-gallery-milkbottles.jpg"
+          />
+          <img
+            src="/images/mobile/image-gallery-milkbottles.jpg"
+            alt="milk bottles"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:750px)"
+            srcset="/images/desktop/image-gallery-orange.jpg"
+          />
+          <img src="/images/mobile/image-gallery-orange.jpg" alt="orange" />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:750px)"
+            srcset="/images/desktop/image-gallery-cone.jpg"
+          />
+          <img src="/images/mobile/image-gallery-cone.jpg" alt="cone" />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:750px)"
+            srcset="/images/desktop/image-gallery-sugarcubes.jpg"
+          />
+          <img
+            src="/images/mobile/image-gallery-sugar-cubes.jpg"
+            alt="sugar cubes"
+          />
+        </picture>
+      </section>
+    </main>
+    <footer>
+      <img class="logo-bot" src="/images/logo.svg" alt="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </nav>
+      <div class="socmed">
+        <a href="#"
+          ><img src="/images/icon-facebook.svg" alt="facebook icon"
+        /></a>
+        <a href="#"
+          ><img src="/images/icon-instagram.svg" alt="instagram icon"
+        /></a>
+        <a href="#"
+          ><img src="/images/icon-twitter.svg" alt="twitter icon"
+        /></a>
+        <a href="#"
+          ><img src="/images/icon-pinterest.svg" alt="pinterest icon"
+        /></a>
+      </div>
+    </footer>
+    <section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="http://github.com/uepzues">uepzues</a>.
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
